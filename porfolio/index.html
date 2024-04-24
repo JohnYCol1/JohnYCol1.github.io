@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd21d23735.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/Juanito-removebg-preview.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Future Financer</p>
+                <h1>Hello! I'm <span>Johnny Tran</span><br>from Vietnam with a
+                    <br> Passion for <span class="text"></span>
+                </h1>
+                <br>
+                <p class="quote">I never dreamed about success, I <span>worked</span> for it.</p>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about us.jpg" alt="about image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I study in APU international school, I did say I’m a pretty average student with nothing special
+                        in any subjects, but I got inspire from my dad’s business skills and his major which is finance.
+                        Think about it, making your first bucks at a young age feel like a big achievements. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Marketing</span><br>Introducing my products.</li>
+                            <li><span>Research</span><br>Precise research.</li>
+                            <li><span>Hustler/Freelancer</span><br>Willing to take any chances/offers</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Managing Money</span><br>Selling things online.</li>
+                            <li><span>Hello</span><br>Precise research.</li>
+                            <li><span>Hustler/Freelancer</span><br>Willing to take any chances/offers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="skillsbar">
+        <div class="container1" id="skills">
+            <h1 class="headingskill">Technical Skills</h1>
+            <div class="Technical-bars">
+                <div class="bar">
+                    <i style="color:#c95d2e" class="bx bxl-html5"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html"><span></span></div>
+                </div>
+                <div class="bar">
+                    <i style="color:#147bbc" class="bx bxl-css3"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css"><span></span></div>
+                </div>
+                <div class="bar">
+                    <i style="color:#b0bc1e" class="bx bxl-javascript"></i>
+                    <div class="info">
+                        <span>JS</span>
+                    </div>
+                    <div class="progress-line js"><span></span></div>
+                </div>
+                <div class="bar">
+                    <i style="color:#c32ec9" class="bx bxl-python"></i>
+                    <div class="info">
+                        <span>PY</span>
+                    </div>
+                    <div class="progress-line py"><span></span></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container1">
+            <h1 class="headingskill">Professional Skills</h1>
+            <div class="radial-bars">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="in">Creative</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="in">Communication</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="in">Problems Solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="in">Teamwork</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Characteristic</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Mindset</h2>
+                    <p>I have a strong and discipline mindset, I will work my best and locked in for the best efficient
+                        and result. I keep my money well and precies for a better future and also for my own
+                        statisfaction.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-teamspeak"></i>
+                    <h2>Teamwork</h2>
+                    <p>I love to do things in group and collaborating with people who have the same vision as me, I
+                        believe that having a strong teamwork, we can share, benefitm support each other in mistakes or
+                        successes.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Coping Mechanism</h2>
+                    <p>I have a strong and discipline mindset, I will work my best and locked in for the best efficient
+                        and result. I keep my money well and precies for a better future and also for my own
+                        statisfaction</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="imageslider">
+        <div class="container">
+            <h1 class="sub-title">School Activities</h1>
+        </div>
+        <div class="slidercontainer">
+            <div class="slider">
+                <div class="slides" style="--img: url('images/IMG_9450.jpg')">
+                    <div class="content">
+                        <h2>Slide 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url('images/IMG_9466.jpg')">
+                    <div class="content">
+                        <h2>Slide 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url('images/IMG_9468.jpg')">
+                    <div class="content">
+                        <h2>Slide 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url('images/IMG_9567.jpg')">
+                    <div class="content">
+                        <h2>Slide 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url('images/about us.jpg')">
+                    <div class="content">
+                        <h2>Slide 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                    </div>
+                </div>
+                <div class="slides" style="--img: url('images/about us.jpg')">
+                    <div class="content">
+                        <h2>Slide 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <span class="prev"></span>
+                <span class="next"></span>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="slider2">
+            <div class="slides2">
+                <div class="slide">
+                    <img src="images/SAT.png" alt="" class="slide2">
+                    <div class="infor">
+                        <h1>UPCOMING</h1>
+                        <p>my upcoming future certificate</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/British-Council-IELTS-Official-Test-Center-Certificate-Academia-1 (2).jpg" alt="" class="slide2">
+                    <div class="infor">
+                        <h1>UPCOMING</h1>
+                        <p>my upcoming future certificate</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Untitled design (2).png" alt="" class="slide2">
+                    <div class="infor">
+                        <h1>UPCOMING</h1>
+                        <p>my upcoming future certificate</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button> -->
+            <div class="buttons">
+                <span class="prev" onclick="prevSlide()"></span>
+                <span class="next" onclick="nextSlide()"></span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="slider">
+        <div class="item">
+            <img src="images/sciencefair.jpg" alt="">
+            <h1>Slide 1</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quibusdam!
+        </div>
+        <div class="item">
+            <img src="images/sciencefair1.jpg" alt="">
+            <h1>Slide 1</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quibusdam!
+        </div>
+        <div class="item">
+            <img src="images/sciencefair2.jpg" alt="">
+            <h1>Slide 1</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quibusdam!
+        </div>
+        <div class="item">
+            <img src="images/sciencefair3.jpg" alt="">
+            <h1>Slide 1</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quibusdam!
+        </div>
+        <div class="item">
+            <img src="images/sciencefair4.jpg" alt="">
+            <h1>Slide 1</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quibusdam!
+        </div>
+        
+        <button id="next">></button>
+        <button id="prev"><</button>
+    </div>
+
+
+
+    <div id="timeline">
+        <div class="container">
+            <h1 class="sub-title">School Activities</h1>
+        </div>
+        <section class="timeline">
+            <ul>
+                <li>
+                    <div class="timelinediv">
+                        <time>2009-2015</time> 
+                        I study at vietnamese public school until grade 4.
+                        <img src="images/unnamed.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2016</time> I decided to move to HCM city and study in my first ever international school called SNA.
+                        <img src="images/truong-quoc-te-bac-my-co-tot-khong-1.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2018</time> After SNA I decided to move to APU international school my second one for more experience
+                        <img src="images/Truong-Quoc-te-APU-Lanh-Binh-Thang-co-tot-khong-anh-dai-dien-1.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2018</time> First time living in a dormitory, it was a brand new experience for me. 
+                        <img src="images/sciencefair1.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2020</time> First Science Fair encounter that make me change my mindset.
+                        <img src="images/sciencefair1.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse
+                        varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>thoanganh496@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0898114035</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100081218996646"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/home?lang=vi"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://vn.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="user_name" id="fullName" placeholder="Your Name" class="contact_input" id="name" required>
+                        <input type="email" name="user_email" id="email" placeholder="Your Email" required>
+                        <textarea name="user_message" id="message" class="contact_input" placeholder="Message" rows="6"></textarea>
+                        <button onclick="sendEmail()" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

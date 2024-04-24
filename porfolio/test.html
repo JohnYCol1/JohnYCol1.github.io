@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="timeline">
+        <div class="timeline-contain left">
+            <img src="images/logo_hoc_thuat-removebg-preview.png" alt="">
+            <div class="text-box">
+                <h2>Vietnamese Public School</h2>
+                <small>2010-2014</small>
+                <p>I study in public school as a kid</p>
+                <span class="leftarrow"></span>
+            </div>
+        </div>
+        <div class="timeline-contain right">
+            <img src="images/logo_hoc_thuat-removebg-preview.png" alt="">
+            <div class="text-box">
+                <h2>Vietnamese Public School</h2>
+                <small>2010-2014</small>
+                <p>I study in public school as a kid</p>
+                <span class="rightarrow"></span>
+            </div>
+        </div>
+        <div class="timeline-contain left">
+            <img src="images/logo_hoc_thuat-removebg-preview.png" alt="">
+            <div class="text-box">
+                <h2>Vietnamese Public School</h2>
+                <small>2010-2014</small>
+                <p>I study in public school as a kid</p>
+                <span class="leftarrow"></span>
+            </div>
+        </div>
+        <div class="timeline-contain right">
+            <img src="images/logo_hoc_thuat-removebg-preview.png" alt="">
+            <div class="text-box">
+                <h2>Vietnamese Public School</h2>
+                <small>2010-2014</small>
+                <p>I study in public school as a kid</p>
+                <span class="rightarrow"></span>
+            </div>
+        </div>
+        <div class="timeline-contain left">
+            <img src="images/logo_hoc_thuat-removebg-preview.png" alt="">
+            <div class="text-box">
+                <h2>Vietnamese Public School</h2>
+                <small>2010-2014</small>
+                <p>I study in public school as a kid</p>
+                <span class="leftarrow"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img: url('images/IMG_9450.jpg')">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('images/IMG_9466.jpg')">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('images/IMG_9468.jpg')">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('images/IMG_9567.jpg')">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('images/about us.jpg')">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('images/about us.jpg')">
+                <div class="content">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptates in perspiciatis iste deserunt temporibus adipisci expedita, quae consectetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>
+</body>
+<script>
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+    let slider = document.querySelector('.slider');
+
+    next.addEventListener('click', function(){
+        let slides = document.querySelectorAll('.slides');
+        slider.appendChild(slides[0]);
+    })
+    prev.addEventListener('click', function(){
+        let slides = document.querySelectorAll('.slides');
+        slider.prepend(slides[slides.length-1]);
+    })
+</script>
+</html>
